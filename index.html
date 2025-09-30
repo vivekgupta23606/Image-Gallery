@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>IMAGE GALLERY</title>
+  </head>
+  <body>
+    <div class="center">
+      <button class="filter" data-filter="all" id="all">all</button>
+      <button class="filter" data-filter="animal" id="animal">animal</button>
+      <button class="filter" data-filter="night-mood" id="night-mood">
+        Night-mood
+      </button>
+      <button class="filter" data-filter="place" id="place">nature</button>
+    </div>
+    <div class="overlay"></div>
+    <div class="imgBox">
+      <span class="cancel">x</span>
+      <img src="" alt="image" />
+      <button id="prev">prev</button>
+      <button id="next">next</button>
+    </div>
+
+    <main id="gallery">
+      <img
+        src="https://picsum.photos/id/237/1000/650"
+        alt="image"
+        class="slide"
+        id="1"
+        data-category="animal"
+      />
+      <img
+        src="https://picsum.photos/id/232/1000/650"
+        alt="image"
+        class="slide"
+        id="2"
+        data-category="night-mood"
+      />
+      <img
+        src="https://picsum.photos/id/242/1000/650"
+        alt="image"
+        class="slide"
+        id="3"
+        data-category="night-mood"
+      />
+      <img
+        src="https://picsum.photos/id/279/1000/650"
+        alt="image"
+        class="slide"
+        id="4"
+        data-category="nature"
+      />
+      <img
+        src="https://picsum.photos/id/239/1000/650"
+        alt="image"
+        class="slide"
+        id="5"
+        data-category="animal"
+      />
+      <img
+        src="https://picsum.photos/id/176/1000/650"
+        alt="image"
+        class="slide"
+        id="6"
+        data-category="nature"
+      />
+      <img
+        src="https://picsum.photos/id/337/1000/650"
+        alt="image"
+        class="slide"
+        id="7"
+        data-category="nature"
+      />
+      <img
+        src="https://picsum.photos/id/348/1000/650"
+        alt="image"
+        class="slide"
+        id="8"
+        data-category="place"
+      />
+      <img
+        src="https://picsum.photos/id/397/1000/650"
+        alt="image"
+        class="slide"
+        id="9"
+        data-category="place"
+      />
+      <img
+        src="https://picsum.photos/id/437/1000/650"
+        alt="image"
+        class="slide"
+        id="10"
+        data-category="place"
+      />
+      <img
+        src="https://picsum.photos/id/537/1000/650"
+        alt="image"
+        class="slide"
+        id="11"
+        data-category="night-mood"
+      />
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

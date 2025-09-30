@@ -1,0 +1,164 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+main {
+  font-family: Arial, Helvetica, sans-serif;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+main img {
+  margin: 10px;
+  height: 200px;
+  width: 450px;
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+  display: none;
+}
+
+.imgBox {
+  height: 60%;
+  width: 60%;
+  top: 20%;
+  left: 20%;
+  position: fixed;
+  transform: scale(0);
+}
+.imgBox img {
+  height: 100%;
+  width: 100%;
+}
+.imgBox span {
+  position: absolute;
+  right: 0%;
+  background-color: black;
+  color: white;
+  height: 5%;
+  width: 5%;
+  text-align: center;
+  cursor: pointer;
+}
+.overlayShow {
+  display: block;
+}
+.imgShow {
+  transform: scale(1);
+}
+
+#prev {
+  position: absolute;
+  top: 50%;
+  left: 0%;
+  height: 40px;
+  width: 50px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid white;
+}
+#next {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  height: 40px;
+  width: 50px;
+  background-color: transparent;
+  color: aliceblue;
+  border: 2px solid white;
+}
+.center {
+  text-align: center;
+}
+.filter {
+  margin-left: 10px;
+  color: white;
+  background-color: black;
+  height: 30px;
+  width: 100px;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 500px) {
+  body {
+    background-color: blueviolet;
+  }
+  .imgBox {
+    height: 50%;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    position: fixed;
+    transform: scale(0);
+  }
+  .imgShow {
+    transform: scale(1);
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+  }
+  .overlayShow {
+    display: block;
+  }
+}
+@media only screen and (max-width: 900px) {
+  body {
+    background-color: rgb(74, 117, 121);
+  }
+  .imgBox {
+    height: 50%;
+    width: 80%;
+    top: 25%;
+    left: 10%;
+    position: fixed;
+    transform: scale(0);
+  }
+  .imgShow {
+    transform: scale(1);
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+  }
+  .overlayShow {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  body {
+    background-color: blueviolet;
+  }
+  .imgBox {
+    height: 40%;
+    width: 90%;
+    top: 30%;
+    left: 5%;
+    position: fixed;
+    transform: scale(0);
+  }
+  .imgShow {
+    transform: scale(1);
+  }
+  .overlay {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: fixed;
+    display: none;
+  }
+  .overlayShow {
+    display: block;
+  }
+}
